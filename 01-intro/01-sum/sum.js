@@ -1,5 +1,9 @@
 function sum(a, b) {
-  /* ваш код */
+  const result = a + b;
+
+  if (typeof result !== 'number') throw new TypeError('');
+
+  return result;
 }
 
 module.exports = sum;
